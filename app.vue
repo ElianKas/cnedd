@@ -5,6 +5,8 @@ useHead({
 </script>
 <template>
   <div>
-    <h1 class="text-[2rem]">Reds</h1>
+    <Landing />
+    <Sub />
+    <Mission />
   </div>
 </template>
