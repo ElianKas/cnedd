@@ -15,7 +15,11 @@ export default {
       darkGreen: '#194D03',
       white: '#FFFFFF',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Lato"'],
+      },
+    },
   },
   plugins: [],
 };

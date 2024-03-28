@@ -17,7 +17,7 @@ onMounted(() => {
 <template>
   <section id="mission" class="h-auto flex flex-col justify-center px-[2rem] py-[8rem]">
     <h2 class="text-primary text-[1.5rem]">Mission: CNEDD</h2>
-    <div class="relative text-[2rem]">
+    <div class="relative text-[4vh]">
       <p class="text-lightGreen">
         We drive the ecological, economic, and societal transformation of organizations and territories. We offer
         comprehensive expertise to facilitate the transition to sustainable practices and lay the foundation for lasting

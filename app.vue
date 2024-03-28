@@ -4,7 +4,7 @@ useHead({
 });
 </script>
 <template>
-  <div>
+  <div class="">
     <Landing />
     <Sub />
     <Mission />
