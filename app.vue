@@ -8,5 +8,6 @@ useHead({
     <Landing />
     <Sub />
     <Mission />
+    <WeDo />
   </div>
 </template>
