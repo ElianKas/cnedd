@@ -34,7 +34,7 @@ const carousel2 = ref(null);
       >
         <div
           @click="carousel2.prev()"
-          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center pr-[0.3rem] cursor-pointer"
+          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <path
@@ -45,7 +45,7 @@ const carousel2 = ref(null);
         </div>
         <div
           @click="carousel2.next()"
-          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center pl-[0.3rem] cursor-pointer"
+          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <path
