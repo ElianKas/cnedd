@@ -12,5 +12,9 @@ useHead({
     <Commitment />
     <Gallery />
     <Team />
+    <Achievements />
+    <News />
+    <Contact />
+    <Socials />
   </div>
 </template>

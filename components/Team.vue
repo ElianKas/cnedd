@@ -17,9 +17,7 @@ const carousel2 = ref(null);
     <h2 class="mb-[4rem]">Our Team For Change</h2>
     <Carousel ref="carousel2" :transition="500" v-bind="settings">
       <Slide v-for="person in people" :key="person">
-        <div
-          class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem] py-[1rem]"
-        >
+        <div class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem]">
           <img :src="`${person.image}`" alt="" class="rounded-full w-[12rem] aspect-square border" />
           <div>
             <p>{{ person.title }}</p>
