@@ -30,7 +30,7 @@ const carousel1 = ref(null);
       >
         <div
           @click="carousel1.prev()"
-          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer"
+          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer grow-0"
         >
           <svg class="ml-[-0.3rem]" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <path
@@ -41,7 +41,7 @@ const carousel1 = ref(null);
         </div>
         <div
           @click="carousel1.next()"
-          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer"
+          class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center cursor-pointer grow-0"
         >
           <svg class="mr-[-0.3rem]" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <path
