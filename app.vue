@@ -4,10 +4,13 @@ useHead({
 });
 </script>
 <template>
-  <div>
+  <div class="text-darkGreen">
     <Landing />
     <Sub />
     <Mission />
     <WeDo />
+    <Commitment />
+    <Gallery />
+    <Team />
   </div>
 </template>

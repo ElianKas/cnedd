@@ -1,26 +1,30 @@
 <script setup>
-const skills = [
-  { title: 'Titel 1', subtitle: 'sub 1' },
-  { title: 'Titel 2', subtitle: 'sub 2' },
+const people = [
+  { image: '', title: 'Titel 1', subtitle: 'sub 1' },
+  { image: '', title: 'Titel 2', subtitle: 'sub 2' },
 ];
 const settings = ref({
-  itemsToShow: 1.2,
+  itemsToShow: 1.8,
   snapAlign: 'center',
   wrapAround: true,
   mouseDrag: false,
   touchDrag: false,
 });
-const carousel1 = ref(null);
+const carousel2 = ref(null);
 </script>
 <template>
-  <section class="text-center">
-    <Carousel ref="carousel1" :transition="500" v-bind="settings">
-      <Slide v-for="skill in skills" :key="skill">
+  <section class="text-center py-[8rem]">
+    <h2 class="mb-[4rem]">Our Team For Change</h2>
+    <Carousel ref="carousel2" :transition="500" v-bind="settings">
+      <Slide v-for="person in people" :key="person">
         <div
-          class="bg-primary mx-[0.5rem] h-[30rem] w-full rounded-[8px] flex flex-col justify-end px-[2rem] py-[1rem]"
+          class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem] py-[1rem]"
         >
-          <p>{{ skill.title }}</p>
-          <p>{{ skill.subtitle }}</p>
+          <img :src="`${person.image}`" alt="" class="rounded-full w-[12rem] aspect-square border" />
+          <div>
+            <p>{{ person.title }}</p>
+            <p>{{ person.subtitle }}</p>
+          </div>
         </div>
       </Slide>
     </Carousel>
@@ -29,7 +33,7 @@ const carousel1 = ref(null);
         class="flex justify-between items-center w-[10rem] h-[4rem] bg-lightGreen rounded-full p-[0.4rem] text-darkGreen"
       >
         <div
-          @click="carousel1.prev()"
+          @click="carousel2.prev()"
           class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center pr-[0.3rem] cursor-pointer"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -40,7 +44,7 @@ const carousel1 = ref(null);
           </svg>
         </div>
         <div
-          @click="carousel1.next()"
+          @click="carousel2.next()"
           class="border-[1px] rounded-full h-full aspect-square bg-white flex justify-center items-center pl-[0.3rem] cursor-pointer"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
