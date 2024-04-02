@@ -16,5 +16,6 @@ useHead({
     <News />
     <Contact />
     <Socials />
+    <Partners />
   </div>
 </template>
