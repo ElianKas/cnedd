@@ -10,12 +10,26 @@ const settings = ref({
   mouseDrag: false,
   touchDrag: false,
 });
+const breakpoints = {
+  640: {
+    itemsToShow: 2.5,
+  },
+  768: {
+    itemsToShow: 3.5,
+  },
+  1024: {
+    itemsToShow: 4,
+  },
+  1280: {
+    itemsToShow: 5,
+  },
+};
 const carousel2 = ref(null);
 </script>
 <template>
   <section class="text-center py-[8rem]">
     <h2 class="mb-[4rem]">Our Team For Change</h2>
-    <Carousel ref="carousel2" :transition="500" v-bind="settings">
+    <Carousel ref="carousel2" :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="person in people" :key="person">
         <div class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem]">
           <img :src="`${person.image}`" alt="" class="rounded-full w-[12rem] aspect-square border" />
