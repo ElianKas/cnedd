@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
-  modules: ['@hypernym/nuxt-gsap', '@nuxtjs/google-fonts', 'vue3-carousel-nuxt'],
+  modules: [
+    '@hypernym/nuxt-gsap',
+    '@nuxtjs/google-fonts',
+    'vue3-carousel-nuxt',
+    "@nuxt/image"
+  ],
   googleFonts: {
     base64: true,
     families: {
