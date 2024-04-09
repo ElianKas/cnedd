@@ -1,7 +1,11 @@
 <script setup>
 const people = [
-  { image: '', title: 'Titel 1', subtitle: 'sub 1' },
-  { image: '', title: 'Titel 2', subtitle: 'sub 2' },
+  { image: 'Team1.jpeg', title: 'Franck Russel Ateba', subtitle: 'Président' },
+  { image: 'Team2.jpeg', title: 'Kéziah Youmdi', subtitle: 'General secretary' },
+  { image: 'Team3.jpeg', title: 'Mero Seidou Nancy', subtitle: 'Communications manager' },
+  { image: 'Team4.jpeg', title: 'Etoa Possama Annuarythe', subtitle: 'Treasurer' },
+  { image: 'Team5.jpeg', title: 'Lukas Langhein', subtitle: 'Administrator' },
+  { image: 'Team6.jpeg', title: 'Franz Wehr', subtitle: 'Administrator' },
 ];
 const settings = ref({
   itemsToShow: 1.8,
@@ -32,7 +36,11 @@ const carousel2 = ref(null);
     <Carousel ref="carousel2" :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="person in people" :key="person">
         <div class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem]">
-          <img :src="`${person.image}`" alt="" class="rounded-full w-[12rem] aspect-square border" />
+          <NuxtImg
+            :src="`/images/Team/${person.image}`"
+            alt=""
+            class="rounded-full w-[12rem] aspect-square border object-cover"
+          />
           <div>
             <p>{{ person.title }}</p>
             <p>{{ person.subtitle }}</p>
