@@ -1,8 +1,8 @@
 <script setup>
 const partners = [
-  { image: '', name: 'Titel 1' },
-  { image: '', name: 'Titel 2' },
-  { image: '', name: 'Titel 3' },
+  { image: 'Partner1.jpeg', name: 'Sustainable Workshops' },
+  { image: 'Partner2.jpeg', name: 'SANEEV' },
+  { image: 'Partner3.jpeg', name: 'Quinzaine Nationale' },
 ];
 const settings = ref({
   itemsToShow: 1.8,
@@ -29,7 +29,7 @@ const carousel2 = ref(null);
     <Carousel ref="carousel2" :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="partner in partners" :key="partner">
         <div class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem]">
-          <img :src="`${partner.image}`" alt="" class="rounded-full w-[12rem] aspect-square border" />
+          <NuxtImg :src="`/images/Logos/${partner.image}`" alt="" class="h-[12rem] object-cover" placeholder />
           <p>{{ partner.name }}</p>
         </div>
       </Slide>
