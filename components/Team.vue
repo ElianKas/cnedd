@@ -40,6 +40,7 @@ const carousel2 = ref(null);
             :src="`/images/Team/${person.image}`"
             alt=""
             class="rounded-full w-[12rem] aspect-square border object-cover"
+            placeholder
           />
           <div>
             <p>{{ person.title }}</p>
