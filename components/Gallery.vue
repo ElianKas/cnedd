@@ -32,6 +32,7 @@ const breakpoints = {
             :src="`/images/Gallery/${image.image}`"
             alt=""
             class="object-cover h-full w-full rounded-[8px]"
+            format="avif"
             placeholder
           />
         </div>
