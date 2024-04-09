@@ -1,7 +1,10 @@
 <script setup>
-const skills = [
-  { title: 'Titel 1', subtitle: 'sub 1' },
-  { title: 'Titel 2', subtitle: 'sub 2' },
+const gallery = [
+  { alt: 'Titel 1', image: 'Gallery1.jpeg' },
+  { alt: 'Titel 2', image: 'Gallery2.jpeg' },
+  { alt: 'Titel 2', image: 'Gallery3.jpeg' },
+  { alt: 'Titel 2', image: 'Gallery4.jpeg' },
+  { alt: 'Titel 2', image: 'Gallery5.jpeg' },
 ];
 const settings = ref({
   itemsToShow: 1,
@@ -23,12 +26,14 @@ const breakpoints = {
 <template>
   <section class="text-center">
     <Carousel :transition="500" v-bind="settings" :breakpoints="breakpoints">
-      <Slide v-for="skill in skills" :key="skill">
-        <div
-          class="bg-primary mx-[0.5rem] aspect-square w-full rounded-[8px] flex flex-col justify-end px-[2rem] py-[1rem]"
-        >
-          <p>{{ skill.title }}</p>
-          <p>{{ skill.subtitle }}</p>
+      <Slide v-for="image in gallery" :key="image">
+        <div class="mx-[0.5rem] aspect-square w-full flex flex-col justify-end">
+          <NuxtImg
+            :src="`/images/Gallery/${image.image}`"
+            alt=""
+            class="object-cover h-full w-full rounded-[8px]"
+            placeholder
+          />
         </div>
       </Slide>
     </Carousel>
