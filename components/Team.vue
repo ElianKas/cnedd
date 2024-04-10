@@ -32,7 +32,7 @@ const carousel2 = ref(null);
 </script>
 <template>
   <section class="text-center py-[8rem]">
-    <h2 class="mb-[4rem]">Our Team For Change</h2>
+    <h2 class="mb-[4rem] text-[1.5rem] lg:text-[2rem]">Our Team For Change</h2>
     <Carousel ref="carousel2" :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="person in people" :key="person">
         <div class="mx-[0.5rem] h-auto w-full flex flex-col justify-between items-center gap-[2rem] px-[1.5rem]">

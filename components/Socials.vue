@@ -1,9 +1,9 @@
 <template>
-  <section class="px-[3rem] py-[8rem] lg:max-w-[40vw] m-auto lg:flex">
+  <section class="px-[3rem] py-[8rem] xl:max-w-[40vw] m-auto lg:flex">
     <div class="mb-[3rem] lg:w-[50%]">
-      <h2>Stay up date</h2>
+      <h2 class="text-[1.5rem] lg:text-[2rem]">Stay up date</h2>
       <br />
-      <p>Follow us on Instagram for a closer look into our work.</p>
+      <p class="lg:text-[1.5rem]">Follow us on Instagram for a closer look into our work.</p>
     </div>
     <div class="lg:w-[50%] flex flex-col items-center">
       <svg
@@ -33,7 +33,7 @@
           />
         </g>
       </svg>
-      <p class="mt-[1rem] text-[#FF553F]">@cnedd.cmr</p>
+      <p class="mt-[1rem] text-[#FF553F] lg:text-[1.5rem]">@cnedd.cmr</p>
     </div>
   </section>
 </template>

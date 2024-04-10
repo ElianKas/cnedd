@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 <template>
   <section id="mission" class="h-auto w-[80vw] flex flex-col justify-center m-auto py-[8rem] lg:w-[60vw]">
-    <h2 class="text-primary text-[1.5rem]">Mission: CNEDD</h2>
+    <h2 class="text-primary text-[1.5rem] lg:text-[2rem]">Mission: CNEDD</h2>
     <br />
     <div class="relative text-[8.4vw] lg:text-[3vw]">
       <p class="text-lightGreen">

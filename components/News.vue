@@ -1,6 +1,6 @@
 <template>
   <section class="max-lg:pt-[8rem] py-[8rem] lg:flex lg:items-center lg:gap-[2rem]">
-    <p class="text-[1.5rem] px-[2rem] lg:w-[50%]">
+    <p class="text-[1.5rem] lg:text-[2rem] px-[2rem] lg:w-[50%]">
       We are about to set up our own plastic recycling station to open up new possibilities in yaounde, so people get
       aware, get creative and create their own future with opening up job opportunities in plastic recycling product
       production.
