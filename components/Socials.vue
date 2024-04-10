@@ -5,7 +5,7 @@
       <br />
       <p class="lg:text-[1.5rem]">Follow us on Instagram for a closer look into our work.</p>
     </div>
-    <div class="lg:w-[50%] flex flex-col items-center">
+    <NuxtLink to="https://www.instagram.com/cnedd.cmr/" class="lg:w-[50%] flex flex-col items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,6 +34,6 @@
         </g>
       </svg>
       <p class="mt-[1rem] text-[#FF553F] lg:text-[1.5rem]">@cnedd.cmr</p>
-    </div>
+    </NuxtLink>
   </section>
 </template>
