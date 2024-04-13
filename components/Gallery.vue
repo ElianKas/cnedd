@@ -10,8 +10,10 @@ const settings = ref({
   itemsToShow: 1,
   snapAlign: 'center',
   wrapAround: true,
-  mouseDrag: true,
-  touchDrag: true,
+  mouseDrag: false,
+  touchDrag: false,
+  autoplay: 2800,
+  transition: 1400,
 });
 const breakpoints = {
   // 1024 and up

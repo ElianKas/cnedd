@@ -1,17 +1,18 @@
 <script setup>
 const achievements = [
-  { value1: 'value1', value2: 'value2' },
-  { value1: 'value3', value2: 'value4' },
-  { value1: 'value5', value2: 'value6' },
-  { value1: 'value7', value2: 'value8' },
-  { value1: 'value9', value2: 'value0' },
+  { value1: '1000+', value2: 'Trees Planted' },
+  { value1: '12', value2: 'Environmental Workshops' },
+  { value1: '400kg+', value2: 'Plastic Recycled' },
+  { value1: '12.000', value2: 'People Educated' },
 ];
 const settings = ref({
   itemsToShow: 1.1,
   snapAlign: 'center',
   wrapAround: true,
-  mouseDrag: true,
-  touchDrag: true,
+  mouseDrag: false,
+  touchDrag: false,
+  autoplay: 1000,
+  transition: 3000,
 });
 const breakpoints = {
   640: {
@@ -29,9 +30,9 @@ const breakpoints = {
   <section class="text-center">
     <Carousel :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="achievement in achievements" :key="achievement">
-        <div class="bg-primary mx-[0.5rem] h-[6rem] w-full rounded-[8px] text-white flex flex-col justify-center">
-          <p>{{ achievement.value1 }}</p>
-          <p>{{ achievement.value2 }}</p>
+        <div class="bg-primary mx-[0.5rem] h-[8rem] w-full rounded-[8px] text-white flex flex-col justify-center">
+          <p class="text-[2rem]">{{ achievement.value1 }}</p>
+          <p class="text-[1.5rem]">{{ achievement.value2 }}</p>
         </div>
       </Slide>
     </Carousel>
