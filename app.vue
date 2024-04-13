@@ -9,8 +9,8 @@ useHead({
     <Sub />
     <Mission />
     <WeDo />
-    <Commitment />
     <Gallery />
+    <Commitment />
     <Team />
     <Achievements />
     <News />

@@ -24,7 +24,7 @@ const breakpoints = {
 };
 </script>
 <template>
-  <section class="text-center">
+  <section class="text-center py-[8rem]">
     <Carousel :transition="500" v-bind="settings" :breakpoints="breakpoints">
       <Slide v-for="image in gallery" :key="image">
         <div class="mx-[0.5rem] aspect-square w-full flex flex-col justify-end">
