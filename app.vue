@@ -4,7 +4,8 @@ useHead({
 });
 </script>
 <template>
-  <div class="text-darkGreen">
+  <main class="text-darkGreen">
+    <TopNavigation />
     <Landing />
     <Sub />
     <Mission />
@@ -17,5 +18,5 @@ useHead({
     <Contact />
     <Socials />
     <Partners />
-  </div>
+  </main>
 </template>

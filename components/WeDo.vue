@@ -33,9 +33,11 @@
         <h3 class="text-[1.5rem]">Soley Recycling Project</h3>
         <br />
         <p>Recycle plastic waste with our partners into useful, innovative and sustainable products</p>
-        <button class="w-[240px] h-[40px] rounded-full bg-primary text-white mt-[2.5rem]">
-          <NuxtLink to="/">Learn More</NuxtLink>
-        </button>
+        <NuxtLink
+          to="/"
+          class="w-[240px] h-[40px] rounded-full bg-primary text-white mt-[2.5rem] block flex justify-center items-center"
+          >Learn More
+        </NuxtLink>
       </div>
     </div>
   </section>
